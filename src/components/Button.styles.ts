@@ -8,20 +8,11 @@ interface ButtonContainerProsp  {
   variant: ButtonVariant
 }
 
-//Objeto que contém as chaves
-const buttonVariants = {
-  primary: 'Blue',
-  secondary: 'Purple',
-  danger: 'red',
-  sucess: 'green'
-}
-
 //< ButtonContainerProps > é passado para tipar a propriedade do componente
 export const ButtonContainer = styled.button<ButtonContainerProsp>`
   width: 100px;
   height: 100px;
 
-  ${props => { 
-    return `background-color:${buttonVariants[props.variant]}`
-  }}
+  background-color: ${props => props.theme.primary};
+
 `
