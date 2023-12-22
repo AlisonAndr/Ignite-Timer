@@ -9,13 +9,12 @@ export const defaultTheme = {
   'gray-06': '#C4C4CC',
   'gray-07': '#E1E1E6',
 
-  'green': '#00875F',
+  green: '#00875F',
   'green-light': '#00B37E',
   'green-dark': '#015F43',
 
-  'red': '#F03847',
+  red: '#F03847',
   'red-dark': '#7A1921',
 
-
-  'yellow': '#FBA94C'
+  yellow: '#FBA94C',
 }

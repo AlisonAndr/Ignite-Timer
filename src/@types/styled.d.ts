@@ -1,12 +1,12 @@
-//d.ts, dentro do arquivo só haverá código typescript
+// d.ts, dentro do arquivo só haverá código typescript
 
-import 'styled-components';
-import { defaultTheme } from '../styles/themes/default';
+import 'styled-components'
+import { defaultTheme } from '../styles/themes/default'
 
-//Estraindo as informações do 'defaultTheme'
+// Estraindo as informações do 'defaultTheme'
 type ThemeType = typeof defaultTheme
 
-//Estrutura para extender tipos não existentes para o styled-component
+// Estrutura para extender tipos não existentes para o styled-component
 declare module 'styled-components' {
-  export interface DefaultTheme extends ThemeType{}
+  export interface DefaultTheme extends ThemeType {}
 }
