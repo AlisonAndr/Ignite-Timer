@@ -1,4 +1,4 @@
-// d.ts, dentro do arquivo só haverá código typescript
+// d.ts, dentro do arquivo haverá apenas código typescript
 
 import 'styled-components'
 import { defaultTheme } from '../styles/themes/default'
