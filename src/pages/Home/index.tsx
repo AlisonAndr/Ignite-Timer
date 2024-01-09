@@ -1,3 +1,4 @@
+import { useForm } from 'react-hook-form'
 import { Play } from 'phosphor-react'
 import {
   ButtonCountDownContainer,
@@ -10,6 +11,8 @@ import {
 } from './styles'
 
 export function Home() {
+  const { register, handleSubmit } = useForm()
+
   return (
     <HomeContainer>
       <form>
@@ -21,6 +24,7 @@ export function Home() {
             id="task"
             placeholder="Dê um nome para o seu projeto"
             list="task-sugestions"
+            {...register('task')}
           />
 
           <datalist id="task-sugestions">
@@ -37,6 +41,7 @@ export function Home() {
             step={5}
             min={10}
             max={60}
+            {...register('minutesAmount', { valueAsNumber: true })}
           />
           <span>minutos</span>
         </FormContainer>
